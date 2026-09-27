@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mradula Choubey | Cloud & AWS</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f9fc;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    nav {
+      background: #0f172a;
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+
+    nav h2 {
+      font-size: 20px;
+    }
+
+    nav a {
+      color: #e2e8f0;
+      text-decoration: none;
+      margin-left: 22px;
+    }
+
+    nav a:hover {
+      color: #f59e0b;
+    }
+
+    .hero {
+      min-height: 520px;
+      background: linear-gradient(135deg, #0f172a, #1e3a5f);
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 70px 10%;
+    }
+
+    .hero-content {
+      max-width: 750px;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      margin-bottom: 8px;
+    }
+
+    .hero h2 {
+      font-size: 27px;
+      color: #fbbf24;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      color: #dbeafe;
+      max-width: 650px;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 22px;
+      margin-right: 10px;
+      background: #f59e0b;
+      color: #111827;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .button-secondary {
+      background: transparent;
+      color: white;
+      border: 1px solid #94a3b8;
+    }
+
+    section {
+      padding: 70px 10%;
+      max-width: 1250px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 25px;
+      color: #0f172a;
+    }
+
+    .about p {
+      max-width: 850px;
+      font-size: 17px;
+      color: #475569;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      background: white;
+      border: 1px solid #e2e8f0;
+      padding: 10px 17px;
+      border-radius: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,.05);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 4px 12px rgba(0,0,0,.06);
+    }
+
+    .card h3 {
+      color: #0f172a;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #64748b;
+      margin-bottom: 15px;
+    }
+
+    .card a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .certification {
+      background: white;
+      padding: 22px;
+      border-left: 5px solid #f59e0b;
+      border-radius: 6px;
+      box-shadow: 0 3px 10px rgba(0,0,0,.05);
+      margin-bottom: 15px;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      color: #64748b;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: #0f172a;
+      color: #94a3b8;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 700px) {
+      nav div {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .hero h2 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <h2>Mradula Choubey</h2>
+
+  <div>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-content">
+    <h1>Mradula Choubey</h1>
+
+    <h2>Cloud & AWS Enthusiast</h2>
+
+    <p>
+      Building hands-on expertise in AWS cloud technologies,
+      infrastructure, automation, and modern cloud-native solutions.
+    </p>
+
+    <a class="button" href="#projects">View My Projects</a>
+    <a class="button button-secondary"
+       href="https://github.com/Mradula24">
+       GitHub Profile
+    </a>
+  </div>
+</div>
+
+<section id="about" class="about">
+  <h2>About Me</h2>
+
+  <p>
+    I am passionate about cloud computing and building reliable,
+    scalable, and secure technology solutions. I am developing
+    hands-on experience with Amazon Web Services and modern
+    DevOps practices through practical cloud projects.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Technical Skills</h2>
+
+  <div class="skills">
+    <span class="skill">AWS</span>
+    <span class="skill">EC2</span>
+    <span class="skill">S3</span>
+    <span class="skill">IAM</span>
+    <span class="skill">VPC</span>
+    <span class="skill">Lambda</span>
+    <span class="skill">CloudWatch</span>
+    <span class="skill">Terraform</span>
+    <span class="skill">Docker</span>
+    <span class="skill">GitHub Actions</span>
+    <span class="skill">Linux</span>
+    <span class="skill">Python</span>
+    <span class="skill">Git</span>
+  </div>
+</section>
+
+<section id="certifications">
+  <h2>Certifications</h2>
+
+  <div class="certification">
+    <h3>AWS Certified Cloud Practitioner</h3>
+    <p>Amazon Web Services</p>
+  </div>
+
+  <div class="certification">
+    <h3>AWS Solutions Architect</h3>
+    <p>Currently expanding my AWS architecture knowledge.</p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Featured Projects</h2>
+
+  <div class="projects">
+
+    <div class="card">
+      <h3>AWS Serverless Application</h3>
+      <p>
+        Serverless cloud application using AWS Lambda,
+        API Gateway, DynamoDB and CloudWatch.
+      </p>
+      <a href="#">View Project →</a>
+    </div>
+
+    <div class="card">
+      <h3>AWS Infrastructure with Terraform</h3>
+      <p>
+        Infrastructure-as-code project for provisioning AWS
+        networking and compute resources using Terraform.
+      </p>
+      <a href="#">View Project →</a>
+    </div>
+
+    <div class="card">
+      <h3>CI/CD Pipeline</h3>
+      <p>
+        Automated build and deployment pipeline using
+        GitHub Actions and AWS cloud services.
+      </p>
+      <a href="#">View Project →</a>
+    </div>
+
+    <div class="card">
+      <h3>Cloud Monitoring</h3>
+      <p>
+        AWS monitoring solution using CloudWatch metrics,
+        logs, dashboards and alarms.
+      </p>
+      <a href="#">View Project →</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Let's Connect</h2>
+
+  <p>
+    I'm interested in cloud technologies, AWS and opportunities
+    to continue growing as a cloud professional.
+  </p>
+
+  <a class="button"
+     href="https://github.com/Mradula24">
+     GitHub
+  </a>
+
+</section>
+
+<footer>
+  © 2026 Mradula Choubey · Built with GitHub Pages
+</footer>
+
+</body>
+</html>
